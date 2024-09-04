@@ -42,6 +42,9 @@
             # Lets you run `nix run .` to start nixvim
             default = nvim;
           };
+
+          # Use nix fmt to reformat code in standard style
+          formatter = pkgs.nixpkgs-fmt;
         };
     };
 }
