@@ -35,8 +35,6 @@
       };
     }
 
-    # 2024.09.06 the following keymaps don't work. Still don't know why.
-    /*
     {
       mode = "n";
       key = "<C-k>";
@@ -117,9 +115,5 @@
         desc = "Decrease current window width";
       };
     }
-    */
-
-
-
   ];
 }
