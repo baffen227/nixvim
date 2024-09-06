@@ -46,5 +46,26 @@
 
     ## Use spaces instead of tabs
     expandtab = true;
+
+
+    # Utility
+
+    ## Enable undo files
+    undofile = true;
+
+    ## Create new horizontal windows below
+    splitbelow = true;
+
+    ## Create new vertical windows to the right
+    splitright = true;
+
+    ## Highlight search
+    hlsearch = true;
+
+    ## Incremental search
+    incsearch = true;
+
+    ## Disable mouse
+    mouse = "";
    };
 }
