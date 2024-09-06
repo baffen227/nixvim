@@ -115,5 +115,47 @@
         desc = "Decrease current window width";
       };
     }
+
+    # TABS
+
+    {
+      mode = "n";
+      key = "<C-t>";
+      action = "<cmd>tabnew<cr>";
+      options = {
+        silent = true;
+        desc = "Open new tab";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<C-w>";
+      action = "<cmd>tabclose<cr>";
+      options = {
+        silent = true;
+        desc = "Close tab";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<C-p>";
+      action = "<cmd>tabprevious<cr>";
+      options = {
+        silent = true;
+        desc = "Switch to previous tab";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<C-n>";
+      action = "<cmd>tabnext<cr>";
+      options = {
+        silent = true;
+        desc = "Switch to next tab";
+      };
+    }
   ];
 }
