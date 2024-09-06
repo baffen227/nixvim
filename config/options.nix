@@ -1,71 +1,35 @@
 {
   opts = {
     # Appearance
-
-    ## Remove splash screen
-    shortmess = "I";
-
-    ## Show cursor line
+    shortmess = "I"; # Remove splash screen
     cursorline = true;
-
-    ## Show line numbers
     number = true;
-
-    ## Show relative numbers
     relativenumber = true;
-
-    ## Do not wrap text
     wrap = false;
 
-
     # Autocomplete (when the user presses the key combination <Ctrl+N>)
-
-    ## Only use current buffer for autocomplete
-    complete = ".";
-
-    ## Show menu even with one entry only, do not select nor insert, and show preview
-    completeopt = [ "menuone" "noselect" "noinsert" "preview" ];
-
-    ## Menu height (number of lines)
-    pumheight = 10;
-
+    complete = "."; # Only use current buffer for autocomplete
+    completeopt = [
+      "menuone" # Show menu even with one entry only
+      "noselect"
+      "noinsert"
+      "preview"
+    ];
+    pumheight = 10; # Menu height (number of lines)
 
     # Indentation
-
-    ## Auto indent
     autoindent = true;
-
-    ## Smart indent
     smartindent = true;
-
-    ## Show tab as four spaces
     tabstop = 4;
-
-    ## Indent using two or four columns
     shiftwidth = 4;
-
-    ## Use spaces instead of tabs
     expandtab = true;
 
-
     # Utility
-
-    ## Enable undo files
-    undofile = true;
-
-    ## Create new horizontal windows below
-    splitbelow = true;
-
-    ## Create new vertical windows to the right
-    splitright = true;
-
-    ## Highlight search
+    undofile = true; # Enable undo files
+    splitbelow = true; # Create new horizontal windows below
+    splitright = true; # Create new vertical windows to the right
     hlsearch = true;
-
-    ## Incremental search
     incsearch = true;
-
-    ## Disable mouse
-    mouse = "";
-   };
+    mouse = ""; # Disable mouse
+  };
 }
