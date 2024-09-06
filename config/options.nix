@@ -28,5 +28,23 @@
 
     ## Menu height (number of lines)
     pumheight = 10;
+
+
+    # Indentation
+
+    ## Auto indent
+    autoindent = true;
+
+    ## Smart indent
+    smartindent = true;
+
+    ## Show tab as four spaces
+    tabstop = 4;
+
+    ## Indent using two or four columns
+    shiftwidth = 4;
+
+    ## Use spaces instead of tabs
+    expandtab = true;
    };
 }
