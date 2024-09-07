@@ -184,5 +184,31 @@
       options.desc = "Toggle highlight search";
     }
 
+    # VISUAL MODE
+    {
+      mode = "v";
+      key = "<leader>r";
+      action = ":s/";
+      options.desc = "Replace in visual mode";
+    }
+    {
+      mode = "v";
+      key = "<leader>y";
+      action = "\"+y";
+      options.desc = "Replace in visual mode";
+    }
+    {
+      mode = "v";
+      key = "<leader>d";
+      action = "\"_d";
+      options.desc = "Delete selection to void register in visual mode";
+    }
+    {
+      mode = "v";
+      key = "<leader>p";
+      action = "\"_dP";
+      options.desc = "Delete selection to void register and then paste over it in visual mode";
+    }
+
   ];
 }
