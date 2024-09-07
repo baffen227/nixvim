@@ -248,5 +248,18 @@
       options.desc = "Search word under cursor keeping cursor in the middle";
     }
 
+    # LOCATION LIST
+    {
+      mode = "n";
+      key = "<C-PageUp>";
+      action = "<Cmd>lprev<CR>";
+      options.desc = "Switch to previous entry of the location list";
+    }
+    {
+      mode = "n";
+      key = "<C-PageDown>";
+      action = "<Cmd>lnext<CR>";
+      options.desc = "Switch to next entry of the location list";
+    }
   ];
 }
