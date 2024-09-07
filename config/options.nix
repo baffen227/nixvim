@@ -32,4 +32,9 @@
     incsearch = true;
     mouse = ""; # Disable mouse
   };
+
+  # Set path to the current working directory
+  extraConfigLua = ''
+    vim.opt.path = ""..vim.fn.getcwd()..","..vim.fn.getcwd().."/**"
+  '';
 }
