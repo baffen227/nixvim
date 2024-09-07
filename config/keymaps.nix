@@ -261,5 +261,43 @@
       action = "<Cmd>lnext<CR>";
       options.desc = "Switch to next entry of the location list";
     }
+
+    # DISABLE ARROW KEYS
+    {
+      mode = "n";
+      key = "<Up>";
+      action = "<Nop>";
+      options.desc = "Disable up key";
+    }
+    {
+      mode = "n";
+      key = "<Down>";
+      action = "<Nop>";
+      options.desc = "Disable down key";
+    }
+    {
+      mode = "n";
+      key = "<Left>";
+      action = "<Nop>";
+      options.desc = "Disable left key";
+    }
+    {
+      mode = "n";
+      key = "<Right>";
+      action = "<Nop>";
+      options.desc = "Disable right key";
+    }
+    {
+      mode = "n";
+      key = "<PageUp>";
+      action = "<Nop>";
+      options.desc = "Disable page-up key";
+    }
+    {
+      mode = "n";
+      key = "<PageDown>";
+      action = "<Nop>";
+      options.desc = "Disable page-down key";
+    }
   ];
 }
