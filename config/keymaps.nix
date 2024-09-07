@@ -210,5 +210,43 @@
       options.desc = "Delete selection to void register and then paste over it in visual mode";
     }
 
+    # MOVEMENT
+    {
+      mode = "n";
+      key = "J";
+      action = "mzJ`z";
+      options.desc = "Join next line keeping cursor position";
+    }
+    {
+      mode = "n";
+      key = "<C-U>";
+      action = "<C-U>M";
+      options.desc = "Scroll half page up keeping cursor in the middle";
+    }
+    {
+      mode = "n";
+      key = "<C-D>";
+      action = "<C-D>M";
+      options.desc = "Scroll half page down keeping cursor in the middle";
+    }
+    {
+      mode = "n";
+      key = "n";
+      action = "nzzzv";
+      options.desc = "Search forwards keeping cursor in the middle";
+    }
+    {
+      mode = "n";
+      key = "N";
+      action = "Nzzzv";
+      options.desc = "Search backwards keeping cursor in the middle";
+    }
+    {
+      mode = "n";
+      key = "*";
+      action = "*zzzv";
+      options.desc = "Search word under cursor keeping cursor in the middle";
+    }
+
   ];
 }
