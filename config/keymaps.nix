@@ -171,6 +171,18 @@
       action = ":Lex 30<CR>";
       options.desc = "Netrw File Explorer";
     }
+    {
+      mode = "n";
+      key = "<F3>";
+      action = ":set list!<CR>";
+      options.desc = "Toggle list (display unprintable characters)";
+    }
+    {
+      mode = "n";
+      key = "<F4>";
+      action = ":set hls!<CR>";
+      options.desc = "Toggle highlight search";
+    }
 
   ];
 }
