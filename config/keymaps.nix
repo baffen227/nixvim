@@ -17,32 +17,32 @@
     }
     {
       mode = "n";
-      key = "<C-q>";
+      key = "<C-Q>";
       action = "<Cmd>quit<CR>";
       options.desc = "Close window";
     }
     {
       mode = "n";
-      key = "<C-k>";
-      action = "<C-w>k";
+      key = "<C-K>";
+      action = "<C-W>k";
       options.desc = "Move to window above";
     }
     {
       mode = "n";
-      key = "<C-j>";
-      action = "<C-w>j";
+      key = "<C-J>";
+      action = "<C-W>j";
       options.desc = "Move to window below";
     }
     {
       mode = "n";
-      key = "<C-h>";
-      action = "<C-w>h";
+      key = "<C-H>";
+      action = "<C-W>h";
       options.desc = "Move to left window";
     }
     {
       mode = "n";
-      key = "<C-l>";
-      action = "<C-w>l";
+      key = "<C-L>";
+      action = "<C-W>L";
       options.desc = "Move to right window";
     }
     {
@@ -73,25 +73,25 @@
     # TABS
     {
       mode = "n";
-      key = "<C-t>";
+      key = "<C-T>";
       action = "<Cmd>tabnew<CR>";
       options.desc = "Open new tab";
     }
     {
       mode = "n";
-      key = "<C-w>";
+      key = "<C-W>";
       action = "<Cmd>tabclose<CR>";
       options.desc = "Close tab";
     }
     {
       mode = "n";
-      key = "<C-p>";
+      key = "<C-P>";
       action = "<Cmd>tabprevious<CR>";
       options.desc = "Switch to previous tab";
     }
     {
       mode = "n";
-      key = "<C-n>";
+      key = "<C-N>";
       action = "<Cmd>tabnext<CR>";
       options.desc = "Switch to next tab";
     }
@@ -127,5 +127,50 @@
       action = "<Cmd>bdelete<CR>";
       options.desc = "Delete buffer";
     }
+
+    # UTILITY
+    {
+      mode = "i";
+      key = "<Tab>";
+      action = "<C-x><C-o>";
+      options.desc = "Omni complete";
+    }
+    {
+      mode = "i";
+      key = "<C-C>";
+      action = "<Esc>:wa<CR>";
+      options.desc = "Save file on exit insert mode";
+    }
+    {
+      mode = "n";
+      key = "<C-C>";
+      action = "<Esc>:wa<CR>";
+      options.desc = "Save file on exit normal mode";
+    }
+    {
+      mode = "n";
+      key = "<leader>?";
+      action = "<Cmd>map<CR>";
+      options.desc = "Show keymaps";
+    }
+    {
+      mode = "n";
+      key = "<leader>r";
+      action = ":%s/<C-R><C-W>//g<Left><Left>";
+      options.desc = "Replace word under the cursor";
+    }
+    {
+      mode = "n";
+      key = "<leader>f";
+      action = ":find ";
+      options.desc = "Find file";
+    }
+    {
+      mode = "n";
+      key = "<leader>e";
+      action = ":Lex 30<CR>";
+      options.desc = "Netrw File Explorer";
+    }
+
   ];
 }
