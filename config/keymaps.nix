@@ -6,19 +6,19 @@
     {
       mode = "n";
       key = "<leader>+";
-      action = "<CMD>vs<CR>";
+      action = "<Cmd>vs<CR>";
       options.desc = "Vertical split window";
     }
     {
       mode = "n";
       key = "<leader>-";
-      action = "<CMD>split<CR>";
+      action = "<Cmd>split<CR>";
       options.desc = "Horizontal split window";
     }
     {
       mode = "n";
       key = "<C-q>";
-      action = "<CMD>quit<CR>";
+      action = "<Cmd>quit<CR>";
       options.desc = "Close window";
     }
     {
@@ -48,25 +48,25 @@
     {
       mode = "n";
       key = "<C-Up>";
-      action = "<CMD>horizontal resize +5<CR>";
+      action = "<Cmd>horizontal resize +5<CR>";
       options.desc = "Increase current window height";
     }
     {
       mode = "n";
       key = "<C-Down>";
-      action = "<CMD>horizontal resize -5<CR>";
+      action = "<Cmd>horizontal resize -5<CR>";
       options.desc = "Decrease current window height";
     }
     {
       mode = "n";
       key = "<C-Left>";
-      action = "<CMD>vertical resize +5<CR>";
+      action = "<Cmd>vertical resize +5<CR>";
       options.desc = "Increase current window width";
     }
     {
       mode = "n";
       key = "<C-Right>";
-      action = "<CMD>vertical resize -5<CR>";
+      action = "<Cmd>vertical resize -5<CR>";
       options.desc = "Decrease current window width";
     }
 
@@ -74,26 +74,58 @@
     {
       mode = "n";
       key = "<C-t>";
-      action = "<CMD>tabnew<CR>";
+      action = "<Cmd>tabnew<CR>";
       options.desc = "Open new tab";
     }
     {
       mode = "n";
       key = "<C-w>";
-      action = "<CMD>tabclose<CR>";
+      action = "<Cmd>tabclose<CR>";
       options.desc = "Close tab";
     }
     {
       mode = "n";
       key = "<C-p>";
-      action = "<CMD>tabprevious<CR>";
+      action = "<Cmd>tabprevious<CR>";
       options.desc = "Switch to previous tab";
     }
     {
       mode = "n";
       key = "<C-n>";
-      action = "<CMD>tabnext<CR>";
+      action = "<Cmd>tabnext<CR>";
       options.desc = "Switch to next tab";
+    }
+
+    # BUFFERS
+    {
+      mode = "n";
+      key = "<M-Left>";
+      action = "<Cmd>bprevious<CR>";
+      options.desc = "Previous buffer";
+    }
+    {
+      mode = "n";
+      key = "<M-Right>";
+      action = "<Cmd>bnext<CR>";
+      options.desc = "Next buffer";
+    }
+    {
+      mode = "n";
+      key = "<M-Down>";
+      action = "<Cmd>buffers<CR>";
+      options.desc = "List buffers";
+    }
+    {
+      mode = "n";
+      key = "<M-Up>";
+      action = ":buffer ";
+      options.desc = "Go to buffer";
+    }
+    {
+      mode = "n";
+      key = "<M-Del>";
+      action = "<Cmd>bdelete<CR>";
+      options.desc = "Delete buffer";
     }
   ];
 }
