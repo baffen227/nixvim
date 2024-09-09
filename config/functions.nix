@@ -28,6 +28,18 @@
           end'';
       };
     }
+
+    # CLEAR JUMPS
+    # When you start Neovim you will always have an empty jump and change lists.
+    {
+      event = "VimEnter";
+      callback = {
+        __raw = ''
+          function (opts)
+            vim.cmd.clearjumps()
+          end'';
+      };
+    }
   ];
 
   keymaps = [
