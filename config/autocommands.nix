@@ -5,10 +5,11 @@
     {
       event = "FileType";
       pattern = "help";
-      callback = { __raw = ''
-        function (opts)
-	  vim.keymap.set('n', '<Enter>', '<C-]>')
-	end'';
+      callback = {
+        __raw = ''
+          function (opts)
+            vim.keymap.set('n', '<Enter>', '<C-]>')
+          end'';
       };
     }
 
@@ -17,13 +18,14 @@
     # with the autocomplete options provided by Neovim.
     {
       event = "InsertCharPre";
-      callback = { __raw = ''
-        function (opts)
-	  if vim.fn.pumvisible() == 0 then
-	    local key = vim.api.nvim_replace_termcodes('<C-n>', true, false, true)
-	    vim.api.nvim_feedkeys(key, 'n', false)
-	  end
-	end'';
+      callback = {
+        __raw = ''
+          function (opts)
+            if vim.fn.pumvisible() == 0 then
+              local key = vim.api.nvim_replace_termcodes('<C-n>', true, false, true)
+              vim.api.nvim_feedkeys(key, 'n', false)
+            end
+          end'';
       };
     }
   ];
