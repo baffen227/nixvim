@@ -48,6 +48,20 @@
       };
       options.desc = "Run a git grep query using the word under the cursor";
     }
+
+    # MAKE
+    {
+      mode = "n";
+      key = "<leader>m";
+      action = {
+        __raw = ''
+          function ()
+            vim.cmd.lgetexpr('system(&makeprg)')
+            vim.cmd.lopen()
+          end'';
+      };
+      options.desc = "Run the makeprg and load the output into the location list";
+    }
   ];
 
   # To jump quickly to any file of a project
