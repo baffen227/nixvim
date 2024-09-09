@@ -1,7 +1,7 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./autocommands.nix
+    ./functions.nix
     ./keymaps.nix
     ./options.nix
   ];
