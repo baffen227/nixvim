@@ -300,22 +300,5 @@
       options.desc = "Disable page-down key";
     }
 
-    # GIT GREP
-    {
-      mode = "n";
-      key = "<leader>g";
-      action = {
-        __raw = ''
-          function ()
-            local cword = vim.fn.expand('<cword>')
-            local git_grep = 'git grep -I -n '..cword
-            local cmd = 'system("'..git_grep..'")'
-            vim.cmd.lgetexpr(cmd)
-            vim.cmd.lopen()
-            vim.cmd('/'..cword)
-          end'';
-      };
-      options.desc = "Run a git grep query using the word under the cursor";
-    }
   ];
 }
