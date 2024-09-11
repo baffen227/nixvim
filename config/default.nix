@@ -2,7 +2,7 @@
   # Import all your configuration modules here
   imports = [
     ./functions.nix
-    ./language
+    ./languages
     ./keymaps.nix
     ./options.nix
   ];
