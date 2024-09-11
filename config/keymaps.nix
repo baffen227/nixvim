@@ -42,7 +42,7 @@
     {
       mode = "n";
       key = "<C-L>";
-      action = "<C-W>L";
+      action = "<C-W>l";
       options.desc = "Move to right window";
     }
     {
@@ -194,20 +194,21 @@
     {
       mode = "v";
       key = "<leader>y";
-      action = "\"+y";
+      action = ''"+y'';
       options.desc = "Replace in visual mode";
     }
     {
       mode = "v";
       key = "<leader>d";
-      action = "\"_d";
+      action = ''"_d'';
       options.desc = "Delete selection to void register in visual mode";
     }
     {
       mode = "v";
       key = "<leader>p";
-      action = "\"_dP";
-      options.desc = "Delete selection to void register and then paste over it in visual mode";
+      action = ''"_dP'';
+      options.desc =
+        "Delete selection to void register and then paste over it in visual mode";
     }
 
     # MOVEMENT
