@@ -5,7 +5,9 @@
     ./keymaps.nix
     ./options.nix
 
-    ./plugins/lsp.nix
+    ./plugins/lsp/conform.nix
+    ./plugins/lsp/lsp.nix
+    ./plugins/lsp/none-ls.nix
 
     ./languages
   ];
