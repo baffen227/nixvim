@@ -8,6 +8,7 @@
     ./plugins/lsp/lsp.nix
     ./plugins/lsp/none-ls.nix
     ./plugins/lsp/conform.nix
+    ./plugins/lsp/trouble.nix
 
     ./languages
   ];
