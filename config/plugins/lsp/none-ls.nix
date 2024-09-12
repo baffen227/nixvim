@@ -1,16 +1,16 @@
 {
   plugins.none-ls = {
-
     enable = true;
-
     enableLspFormat = true;
-
-    settings = {
-      updateInInsert = false;
-    };
+    settings.updateInInsert = false;
 
     sources = {
+      diagnostics = {
+        statix.enable = true;
+        yamllint.enable = true;
+      };
       formatting = {
+        # python formatter
         black = {
           enable = true;
           settings = ''
@@ -19,6 +19,7 @@
             }
           '';
         };
+        # markdown formatter
         prettier = {
           enable = true;
           disableTsServerFormatter = true;
