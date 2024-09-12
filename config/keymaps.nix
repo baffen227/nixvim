@@ -207,8 +207,7 @@
       mode = "v";
       key = "<leader>p";
       action = ''"_dP'';
-      options.desc =
-        "Delete selection to void register and then paste over it in visual mode";
+      options.desc = "Delete selection to void register and then paste over it in visual mode";
     }
 
     # MOVEMENT
