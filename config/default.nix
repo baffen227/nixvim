@@ -10,7 +10,8 @@
     ./plugins/lsp/conform.nix
     ./plugins/lsp/trouble.nix
     ./plugins/lsp/lspsaga.nix
-
     ./languages
+
+    ./plugins/telescope.nix
   ];
 }
