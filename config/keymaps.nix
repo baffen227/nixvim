@@ -83,12 +83,15 @@
       action = "<Cmd>tabclose<CR>";
       options.desc = "Close tab";
     }
-    {
-      mode = "n";
-      key = "<C-P>";
-      action = "<Cmd>tabprevious<CR>";
-      options.desc = "Switch to previous tab";
-    }
+    # <C-P> is used in telescope as jumping to a file
+    /*
+      {
+        mode = "n";
+        key = "<C-P>";
+        action = "<Cmd>tabprevious<CR>";
+        options.desc = "Switch to previous tab";
+      }
+    */
     {
       mode = "n";
       key = "<C-N>";
@@ -137,13 +140,13 @@
     }
     {
       mode = "i";
-      key = "<C-C>";
+      key = "<C-S>";
       action = "<Esc>:wa<CR>";
       options.desc = "Save file on exit insert mode";
     }
     {
       mode = "n";
-      key = "<C-C>";
+      key = "<C-S>";
       action = "<Esc>:wa<CR>";
       options.desc = "Save file on exit normal mode";
     }
@@ -203,12 +206,15 @@
       action = ''"_d'';
       options.desc = "Delete selection to void register in visual mode";
     }
-    {
-      mode = "v";
-      key = "<leader>p";
-      action = ''"_dP'';
-      options.desc = "Delete selection to void register and then paste over it in visual mode";
-    }
+    # <leader>p is used in telescope as search oldfiles
+    /*
+      {
+        mode = "v";
+        key = "<leader>p";
+        action = ''"_dP'';
+        options.desc = "Delete selection to void register and then paste over it in visual mode";
+      }
+    */
 
     # MOVEMENT
     {
