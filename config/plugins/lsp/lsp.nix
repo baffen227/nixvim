@@ -8,20 +8,23 @@
       keymaps = {
         silent = true;
 
-        diagnostic = {
-          # Navigate in diagnostic
-          "<leader>k" = "goto_prev";
-          "<leader>j" = "goto_next";
-        };
+        # the following keymaps are replaced by lspsaga
+        /*
+          diagnostic = {
+            # Navigate in diagnostic
+            "<leader>k" = "goto_prev";
+            "<leader>j" = "goto_next";
+          };
 
-        lspBuf = {
-          gd = "definition";
-          gD = "references";
-          gt = "type_definition";
-          gi = "implementation";
-          K = "hover";
-          "<F2>" = "rename";
-        };
+          lspBuf = {
+            gd = "definition";
+            gr = "references";
+            gt = "type_definition";
+            gi = "implementation";
+            K = "hover";
+            "<F2>" = "rename";
+          };
+        */
       };
 
       servers = {

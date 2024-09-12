@@ -89,19 +89,9 @@
       };
     }
 
-    # {
-    #   mode = "n";
-    #   key = "gD";
-    #   action = "<cmd>Lspsaga show_line_diagnostics<CR>";
-    #   options = {
-    #     desc = "Goto Declaration";
-    #     silent = true;
-    #   };
-    # }
-
     {
       mode = "n";
-      key = "gI";
+      key = "gi";
       action = "<cmd>Lspsaga finder imp<CR>";
       options = {
         desc = "Goto Implementation";
@@ -111,7 +101,7 @@
 
     {
       mode = "n";
-      key = "gT";
+      key = "gt";
       action = "<cmd>Lspsaga peek_type_definition<CR>";
       options = {
         desc = "Type Definition";
@@ -171,7 +161,7 @@
 
     {
       mode = "n";
-      key = "<leader>k";
+      key = "<leader>j";
       action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
       options = {
         desc = "Next Diagnostic";
@@ -181,7 +171,7 @@
 
     {
       mode = "n";
-      key = "<leader>j";
+      key = "<leader>k";
       action = "<cmd>Lspsaga diagnostic_jump_prev<CR>";
       options = {
         desc = "Previous Diagnostic";
