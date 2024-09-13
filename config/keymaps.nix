@@ -162,12 +162,16 @@
       action = ":%s/<C-R><C-W>//g<Left><Left>";
       options.desc = "Replace word under the cursor";
     }
-    {
-      mode = "n";
-      key = "<leader>f";
-      action = ":find ";
-      options.desc = "Find file";
-    }
+    # <leader>f is used in telescope as find_files
+    /*
+      <leader>f is used
+      {
+        mode = "n";
+        key = "<leader>f";
+        action = ":find ";
+        options.desc = "Find file";
+      }
+    */
     {
       mode = "n";
       key = "<leader>e";
