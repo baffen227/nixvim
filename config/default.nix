@@ -15,5 +15,6 @@
     ./plugins/telescope.nix
 
     ./plugins/git/gitsigns.nix
+    ./plugins/git/lazygit.nix
   ];
 }
