@@ -83,15 +83,6 @@
       action = "<Cmd>tabclose<CR>";
       options.desc = "Close tab";
     }
-    # <C-P> is used in telescope as jumping to a file
-    /*
-      {
-        mode = "n";
-        key = "<C-P>";
-        action = "<Cmd>tabprevious<CR>";
-        options.desc = "Switch to previous tab";
-      }
-    */
     {
       mode = "n";
       key = "<C-N>";
@@ -162,16 +153,6 @@
       action = ":%s/<C-R><C-W>//g<Left><Left>";
       options.desc = "Replace word under the cursor";
     }
-    # <leader>f is used in telescope as find_files
-    /*
-      <leader>f is used
-      {
-        mode = "n";
-        key = "<leader>f";
-        action = ":find ";
-        options.desc = "Find file";
-      }
-    */
     {
       mode = "n";
       key = "<leader>e";
@@ -210,15 +191,6 @@
       action = ''"_d'';
       options.desc = "Delete selection to void register in visual mode";
     }
-    # <leader>p is used in telescope as search oldfiles
-    /*
-      {
-        mode = "v";
-        key = "<leader>p";
-        action = ''"_dP'';
-        options.desc = "Delete selection to void register and then paste over it in visual mode";
-      }
-    */
 
     # MOVEMENT
     {
