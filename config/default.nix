@@ -13,5 +13,7 @@
     ./languages
 
     ./plugins/telescope.nix
+
+    ./plugins/git/gitsigns.nix
   ];
 }
