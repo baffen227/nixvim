@@ -16,5 +16,7 @@
 
     ./plugins/git/gitsigns.nix
     ./plugins/git/lazygit.nix
+
+    ./plugins/floaterm.nix
   ];
 }
