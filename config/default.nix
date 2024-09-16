@@ -18,5 +18,6 @@
     ./plugins/git/lazygit.nix
 
     ./plugins/floaterm.nix
+    ./plugins/neo-tree.nix
   ];
 }
