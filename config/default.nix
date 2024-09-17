@@ -21,4 +21,6 @@
     ./plugins/neo-tree.nix
     ./plugins/treesitter.nix
   ];
+
+  colorschemes.gruvbox.enable = true;
 }
