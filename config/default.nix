@@ -19,5 +19,6 @@
 
     ./plugins/floaterm.nix
     ./plugins/neo-tree.nix
+    ./plugins/treesitter.nix
   ];
 }
