@@ -20,6 +20,7 @@
     ./plugins/floaterm.nix
     ./plugins/neo-tree.nix
     ./plugins/treesitter.nix
+    ./plugins/completion.nix
   ];
 
   colorschemes.gruvbox.enable = true;
