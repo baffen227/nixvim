@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   # Import all your configuration modules here
   imports = [
@@ -21,7 +22,13 @@
     ./plugins/neo-tree.nix
     ./plugins/treesitter.nix
     ./plugins/completion.nix
+    ./plugins/dap.nix
   ];
 
   colorschemes.gruvbox.enable = true;
+
+  extraPackages = with pkgs; [
+    # Debuggers
+    lldb_17
+  ];
 }
