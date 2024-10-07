@@ -22,7 +22,7 @@
     ./plugins/neo-tree.nix
     ./plugins/treesitter.nix
     ./plugins/completion.nix
-    ./plugins/dap.nix
+    #./plugins/dap.nix
   ];
 
   colorschemes.gruvbox.enable = true;
